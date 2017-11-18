@@ -1,11 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import App from './components/app';
+import SearchBar from './components/SearchBar';
 const API_KEY = 'AIzaSyB9XN8wdBoXHWFiYN4nZ7CiHcamtsC7VP8';
 
-ReactDOM.render(<div>
-  <App name='Jhon'/>
-  <App name='Vincenzo' />
-  <App name='Barbara'/>
-</div>, document.querySelector('.container'));
+const App = () => {
+  return(
+    <div>
+      Video Player
+      <SearchBar />
+    </div>
+  );
+}
+
+ReactDOM.render(<App />, document.querySelector('.container'));
